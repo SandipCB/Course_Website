@@ -3,4 +3,5 @@
 <br>
 <br>
 <b>This is the Overview of my project<b><br>
-![image](https://github.com/SandipCB/Course_Website/assets/96263756/7b5a6811-66bb-4017-a7ef-6ef18d956baa)
+
+![image](https://github.com/SandipCB/Course_Website/assets/96263756/509e9f1d-5dfd-4c69-9c9f-0ec53238c027)

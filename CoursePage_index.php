@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Skillspy - Hey, we’re Campus Dot Crew Team</title>
+  <meta name="description" content="This is a Course html template made by Campus Dot Crew">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./assets/img/logo.png" type="image/svg+xml">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- Splide CSS -->
+  <link rel="stylesheet" href="./CSS/splide.min.css">
+  <!-- Local CSS -->
+  <link rel="stylesheet" href="./CSS/style.css">
+  <!-- After Login -->
+  <link rel="stylesheet" href="./CSS/after_login_styles.css">
+  <!-- Before Login -->
+  <link rel="stylesheet" href="./CSS/before_login_styles.css">
+</head>
+
+<body>
+
+  <div class="container-fluid">
+    <!-- Nav Section Start -->
+    <section id="navSection">
+      <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
+        <div class="container-fluid">
+          <img class="logo" src="./assets/campusdotcrew.png" alt="" height="50" width="50">
+          <a class="navbar-brand logo-name" href="index.php">Campus 360</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="reverse ms-auto">
+              <div class="element2">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                  <li class="n-item nav-item text-center">
+                    <a class="li-item nav-link active home" aria-current="page" href="index.php">Home</a>
+                  </li>
+                  <li class="n-item nav-item text-center">
+                    <a class="li-item nav-link active home" aria-current="page" href="navitems/Course Website/CoursePage.php">Courses</a>
+                  </li>
+                  <li class="n-item nav-item">
+                    <a class="li-item nav-link" aria-current="page" href="CoursePage.php">Job Preparation</a>
+                  </li>
+                  <li class="n-item nav-item">
+                    <a class="li-item nav-link" aria-current="page" href="#">Vlog</a>
+                  </li>
+                  <?php if (isset($_SESSION['l_email']) && $_SESSION['l_email'] === "campusdotcrew@gmail.com") { ?>
+                    <li class="n-item nav-item">
+                      <a class="li-item nav-link" aria-current="page" href="dashboard.php">Dashboard</a>
+                    </li>
+                  <?php } ?>
+                  <li class="s-li-icon nav-item dropdown d-menu">
+                    <a href="#" style="text-decoration:none;" class="dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                      <i class="s-icon fa-solid fa-magnifying-glass p-1" style="color:white;"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" id="search-menu">
+                      <li>
+                        <form class="d-flex">
+                          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                          <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="element3 d-flex" style="align-items: center;">
+              <?php include('./element3.php'); ?>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <!-- Nav Section End -->
+
+
+    <!-- Hero Section Start -->
+    <section id="heroSection" class="section hero py-5" aria-label="home">
+      <div class="container">
+        <h1 class="fw-5 hero-title pt-5 pb-3">
+          <strong class="strongHero">Hey, we’re Campus Dot Crew Team.</strong> <br> Show our thoughts, stories and
+          increase ideas.
+        </h1>
+        <p class="hero-details">
+          Hey!
+          <br>
+
+          This is our course page. Here, you can learn about any kind of course that is relevant to CSE students. Initialy, we built this website for CSE background students. Here we offer your best site or YouTube links for learning anything according to CSEians needs. We simply appreciate your effort. From now on, you can easily find the best YouTube link or website for your targeted learning. We are also offering you the world's best-paid course for a minimum payment. You guys can also find our respective leading university teachers class records according to the courses in which they have taken them previously.
+          <br>
+          <br>
+          As our website is under construction, some features may be unavailable. Actually, we are under construction, so keep in touch with us and stay tuned for our updates. If you are a paid member, we will send you an email with a new update.<br>
+
+          Good Luck.&#128522;
+        </p>
+      </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Feature Section Start -->
+    <section id="featureSection" class="featured py-5" aria-label="featured post">
+      <div class="container">
+        <section id="featuredPostSlider" class="splide" aria-label="Splide Basic HTML Example">
+          <p class="featureTitle fs-2 py-3">
+            Get started with our <strong class="strong"> Best Courses</strong>
+          </p>
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <div class="blog-card">
+                  <figure class="card-banner img-holder">
+                    <img src="./assets/img/python.jpg" loading="lazy" alt="Python is a high-level programming language">
+                  </figure>
+                  <div class="card-content">
+                    <h3>
+                      <a href="./Final_Course_Page/Python/Python index.html" class="card-title">
+                        Python for beginners.
+                      </a>
+                    </h3>
+                    <p class="card-text">
+                      Python is a high-level programming language that is widely used for its simplicity and readability.<br> For details about "Python" then click the "Python for beginners."
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="blog-card">
+                  <figure class="card-banner img-holder">
+                    <img src="./assets/img/C.jpg" loading="lazy" alt=" C language is a versatile and widely used programming language">
+                  </figure>
+                  <div class="card-content">
+                    <h3>
+                      <a href="./Final_Course_Page/C/C index.html" class="card-title">
+                        C language
+                      </a>
+                    </h3>
+                    <p class="card-text">
+                      C language is a versatile and widely used programming language known for its efficiency and low-level control over computer hardware.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="blog-card">
+                  <figure class="card-banner img-holder">
+                    <img src="./assets/img/c++.jpg" loading="lazy" alt=" C++ is an extension of the C programming language">
+                  </figure>
+                  <div class="card-content">
+                    <h3>
+                      <a href="./Final_Course_Page/C++/C++ index.html" class="card-title">
+                        C++ language
+                      </a>
+                    </h3>
+                    <p class="card-text">
+                      C++ is an extension of the C programming language that adds object-oriented features, making it suitable for both low-level system programming and high-level application development.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="blog-card">
+                  <figure class="card-banner img-holder">
+                    <img src="./assets/img/java.png" loading="lazy" alt="Java is a versatile and platform-independent programming language">
+                  </figure>
+                  <div class="card-content">
+                    <h3>
+                      <a href="./Final_Course_Page/Java/Java index.html" class="card-title">
+                        Java language
+                      </a>
+                    </h3>
+                    <p class="card-text">
+                      Java is a versatile and platform-independent programming language renowned for its "write once, run anywhere" capability, commonly used for building diverse software applications.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="blog-card">
+                  <figure class="card-banner img-holder">
+                    <img src="./assets/img/html.jpg" loading="lazy" alt="HTML (Hypertext Markup Language) is the standard language">
+                  </figure>
+                  <div class="card-content">
+                    <h3>
+                      <a href="./Final_Course_Page/HTML/HTML index.html" class="card-title">
+                        HTML
+                      </a>
+                    </h3>
+                    <p class="card-text">
+                      HTML (Hypertext Markup Language) is the standard language for creating and structuring web content, used to design and display elements on websites.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="blog-card">
+                  <figure class="card-banner img-holder">
+                    <img src="./assets/img/ds.jpg" loading="lazy" alt="Data structures are organized formats for efficiently storing">
+                  </figure>
+                  <div class="card-content">
+                    <h3>
+                      <a href="./Final_Course_Page/Data Strcture/DS index.html" class="card-title">
+                        Data Structure
+                      </a>
+                    </h3>
+                    <p class="card-text">
+                      Data structures are organized formats for efficiently storing, managing, and manipulating data in various programming applications.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- Progress Bar -->
+          <div class="splide__progress">
+            <div class="splide__progress__bar">
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+    <!-- Feature Section End -->
+    <!-- Lately Section Start -->
+    <section id="latelySection" class="py-5">
+      <div class="container">
+        <div class="row py-5">
+          <div class="col">
+            <h2 class="fs-2">
+              See what we’ve <strong class="strong">written lately</strong>
+            </h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-3 col-lg-4 col-sm-6 col-12 ">
+            <div class="lately-blog-card m-3">
+              <figure class="card-banner">
+                <img src="./assets/img/python.jpg" loading="lazy" alt="Python is a high-level programming language">
+              </figure>
+              <div class="card-content">
+                <h3>
+                  <a href="./Final_Course_Page/AI/AI index.html" class="card-title">
+                    AI Evolution: From Logic to Learning
+                  </a>
+                </h3>
+                <p class="card-text">
+                  Artificial Intelligence (AI) stands as a groundbreaking field at the intersection of computer science,mathematics, and cognitive science, focused on developing systems and technologies that simulate human-like intelligence...
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-sm-6 col-12 ">
+            <div class="lately-blog-card m-3">
+              <figure class="card-banner">
+                <img src="./assets/img/C.jpg" loading="lazy" alt="C language is a versatile and widely used programming language">
+              </figure>
+              <div class="card-content">
+                <h3>
+                  <a href="./Final_Course_Page/Alogorithom/Algo Index.html" class="card-title">
+                    Exploring Computer Algorithms
+                  </a>
+                </h3>
+                <p class="card-text">
+                  Exploring Computer Algorithms" takes you on a captivating journey into the heart of computation. From sorting and searching to optimization and machine learning...
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-sm-6 col-12 ">
+            <div class="lately-blog-card m-3">
+              <figure class="card-banner">
+                <img src="./assets/img/python.jpg" loading="lazy" alt="C++ is an extension of the C programming language">
+              </figure>
+              <div class="card-content">
+                <h3>
+                  <a href="./Final_Course_Page/Digital Electronics/DE index.html" class="card-title">
+                    Navigating the Realm of Digital Electronics
+                  </a>
+                </h3>
+                <p class="card-text">
+                  Wired Wonders: Navigating the Realm of Digital Electronics" invites you to journey into the intricate world where electrons dance to shape...
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-sm-6 col-12 ">
+            <div class="lately-blog-card m-3">
+              <figure class="card-banner">
+                <img src="./assets/img/java.png" loading="lazy" alt="Java is a versatile and platform-independent programming language">
+              </figure>
+              <div class="card-content">
+                <h3>
+                  <a href="./Final_Course_Page/Microprosessor/Micro index.html" class="card-title">
+                    Unveiling the Power of Microprocessors
+                  </a>
+                </h3>
+                <p class="card-text">
+                  Silicon Symphony: Unveiling the Power of Microprocessors" invites you to dive into the heart of computing innovation.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-sm-6 col-12 ">
+            <div class="lately-blog-card m-3">
+              <figure class="card-banner">
+                <img src="./assets/img/CSS.jpg" loading="lazy" alt="CSS (Cascading Style Sheets) is a styling language">
+              </figure>
+              <div class="card-content">
+                <h3>
+                  <a href="./Final_Course_Page/My Sql/MySql index.html" class="card-title">
+                    Navigating MySQL's Relational Landscape
+                  </a>
+                </h3>
+                <p class="card-text">
+                  Mastering Data Harmony: Navigating MySQL's Relational Landscape" is your guide to the world of structured data management...
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-sm-6 col-12 ">
+            <div class="lately-blog-card m-3">
+              <figure class="card-banner">
+                <img src="./assets/img/PHP.jpg" loading="lazy" alt="Python is a high-level programming language">
+              </figure>
+              <div class="card-content">
+                <h3>
+                  <a href="./Final_Course_Page/OOP/OOP index.html" class="card-title">
+                    Object-Oriented Programming
+                  </a>
+                </h3>
+                <p class="card-text">
+                  Unleashing Creativity in Code: The Essence of Object-Oriented Programming" is your gateway to a revolutionary approach to software development...
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-sm-6 col-12 ">
+            <div class="lately-blog-card m-3">
+              <figure class="card-banner">
+                <img src="./assets/img/html.jpg" loading="lazy" alt="Python is a high-level programming language">
+              </figure>
+              <div class="card-content">
+                <h3>
+                  <a href="./Final_Course_Page/React/React index.html" class="card-title">
+                    Exploring the World of React
+                  </a>
+                </h3>
+                <p class="card-text">
+                  Crafting Dynamic User Experiences: Exploring the World of React" is your gateway to the forefront of web development...
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-sm-6 col-12 ">
+            <div class="lately-blog-card m-3">
+              <figure class="card-banner">
+                <img src="./assets/img/ds.jpg" loading="lazy" alt="Python is a high-level programming language">
+              </figure>
+              <div class="card-content">
+                <h3>
+                  <a href="./Final_Course_Page/VLSI/VLSI index.html" class="card-title">
+                    the Marvels of VLSI Technology.
+                  </a>
+                </h3>
+                <p class="card-text">
+                  Shrinking Horizons: Exploring the Marvels of VLSI Technology" invites you to journey into the world...
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="row">
+          <div class="col text-center">
+            <button id="loadMoreBtn" class="py-1 px-3 fs-5 fw-bold my-5 border-0 rounded">Load More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Lately Section End -->
+
+    <!-- Recommended Section Start -->
+    <section id="recommendedSection">
+      <div class="container">
+        <p class="section-subtitle pt-3 pb-5">
+          <strong class="strong fs-3">Recommended</strong>
+        </p>
+        <div id="recommendedPostSlider" class="splide" role="group" aria-label="Splide Basic HTML Example">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide m-3">
+                <div class="blog-card">
+                  <figure class="card-banner img-holder">
+                    <img src="./assets/img/C.jpg" loading="lazy" alt=" C language is a versatile and widely used programming language " class="img-cover">
+                  </figure>
+                  <div class="card-content">
+                    <h3 class="h5">
+                      <a href="./Final_Course_Page/C/C index.html" class="card-title hover:underline">
+                        C language is a versatile and widely used programming language...
+                      </a>
+                    </h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide m-3">
+                <div class="blog-card">
+                  <figure class="card-banner img-holder">
+                    <img src="./assets/img/c++.jpg" loading="lazy" alt=" C++ is an extension of the C programming language " class="img-cover">
+                  </figure>
+                  <div class="card-content">
+                    <h3 class="h5">
+                      <a href="./Final_Course_Page/C++/C++ index.html" class="card-title hover:underline">
+                        C++ is an extension of the C programming language...
+                      </a>
+                    </h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide m-3">
+                <div class="blog-card">
+                  <figure class="card-banner img-holder">
+                    <img src="./assets/img/java.jpg" loading="lazy" alt=" ava is a versatile and platform-independent programming language " class="img-cover">
+                  </figure>
+                  <div class="card-content">
+                    <h3 class="h5">
+                      <a href="./Final_Course_Page/Java/Java index.html" class="card-title hover:underline">
+                        Java is a versatile and platform-independent programming language...
+                      </a>
+                    </h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide m-3">
+                <div class="blog-card">
+                  <figure class="card-banner img-holder">
+                    <img src="./assets/img/html.jpg" loading="lazy" alt=" HTML (Hypertext Markup Language) is the standard language " class="img-cover">
+                  </figure>
+                  <div class="card-content">
+                    <h3 class="h5">
+                      <a href="./Final_Course_Page/HTML/HTML index.html" class="card-title hover:underline">
+                        HTML (Hypertext Markup Language) is the standard language...
+                      </a>
+                    </h3>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide m-3">
+                <div class="blog-card">
+                  <figure class="card-banner img-holder">
+                    <img src="./assets/img/PHP.jpg" loading="lazy" alt=" PHP is a widely used server-side scripting language for  " class="img-cover">
+                  </figure>
+                  <div class="card-content">
+                    <h3 class="h5">
+                      <a href="./Final_Course_Page/PHP/PHP.html" class="card-title hover:underline">
+                        PHP is a widely used server-side scripting language for ...
+                      </a>
+                    </h3>
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Recommended Section End -->
+    <!-- Footer Section Start -->
+    <footer>
+      <div class="footer-widgets-area border">
+        <div class="container container-1360">
+          <div class="row">
+            <div class="col-lg-3 col-sm-6">
+              <div class="widget address-widget">
+                <h4 class="widget-title">Our Address</h4>
+                <p>Leading University<br> Department of CSE<br>Batch - 53rd<br>Ragibnagar, Sylhet</p>
+                <p>01720264931<br>campusdotcrew@gmail.com</p>
+              </div>
+            </div>
+            <div class="col-lg-2 col-sm-6">
+              <div class="widget nav-widget">
+                <h4 class="widget-title">Quick Links</h4>
+                <ul>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#">Careers</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Stories</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-2 col-sm-6">
+              <div class="widget nav-widget">
+                <h4 class="widget-title">Categories</h4>
+                <ul>
+                  <li><a href="#">Lifestyle</a></li>
+                  <li><a href="#">Travel</a></li>
+                  <li><a href="#">Food & Drinks</a></li>
+                  <li><a href="#">Inspiration</a></li>
+                  <li><a href="#">Decoration</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 ml-auto">
+              <div class="widget newsletter-widget">
+                <h4 class="widget-title">Our Monthly Newsletter </h4>
+                <p class="fs-5">
+                  Sign Up TO Get Updates On Articles, Interviews And Events.
+                </p>
+                <form action="#">
+                  <input type="email" placeholder="your email">
+                  <button type="submit">Sign Up</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright-area border">
+        <div class="container container-1360">
+          <div class="row align-items-center">
+            <div class="col-lg-6 col-12">
+              <div class="social-links">
+                <ul>
+                  <li class="title">Follow Me</li>
+                  <li><a href="https://twitter.com/SandipC49248337?fbclid=IwAR0yuniwVnPF4__5_WZCe6DQ9QcHwlFYPEbGBd1sGPyqjOn16H9-ltYrXGs">Twitter</a></li>
+                  <li><a href="https://www.facebook.com/SandipCb365/">Facebook</a></li>
+                  <li><a href="#">Youtube</a></li>
+                  <li><a href="https://www.instagram.com/chakrabortysandip872?fbclid=IwAR1LlZ0nyqpiT_9gImEO75gtYrCJrcobRbYJ-ht66eY05vz9eFhTyo4ZHm0">Instagram</a></li>
+                  <li><a href="https://www.linkedin.com/in/sandip-chakraborty-a874671b1/?fbclid=IwAR1zPDvokWnxID-HQQzuWAhhPbTS2RnFdhHADhPNws0-Jn3OhvHDIbICLFQ">Linkedin</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-6 col-12">
+              <div class="copyright-text text-lg-right">
+                <p class="fw-bold"><span> &copy; Copyright</span> - 2023 Campus Dot Crew | All rights reserved</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section End -->
+
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <!-- Splide JS -->
+  <script src="./JS/External/splide.min.js"></script>
+  <script src="./JS/External/splideExtensionAutoScroll.min.js"></script>
+  <!-- Local JS -->
+  <script src="./JS/Local/main.js"></script>
+</body>
+
+</html>

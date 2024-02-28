@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="./CSS/style.css">
+
+</head>
+
+<body>
+
+  <!-- Nav Section Start -->
+  <div class="container-fluid">
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 float-mb-end">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+
+          <div class="dropdown">
+            <button class="btn dropdown-toggle p-1" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <div class="profile d-inline-flex">
+                <div class="profile_img_container ">
+                  <img src="./assets/img/profile/profile.jpg" alt="dr. jonh wick">
+                </div>
+              </div>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+          <form class="d-inline-flex" role="search">
+            <button class="btn btn-outline-success">Logout</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- Nav Section End -->
+    <!-- Info Section Start -->
+    <section id="infoSection" class="info p-4">
+      <div class="container">
+        <h1 class="python text-center  mb-5 mt-2">Main Copy</h1>
+        <p id="infoCollapse">
+        <!-- <div class="body"> -->
+          <div class="message"class="body">
+            We are under construction. <br>Please be patient and stay with us. <br>Something great is loading.
+          </div>
+        <!-- </div> -->
+         <span id="dots">...</span><span id="more">..
+        </span>
+        <button class="fw-bold" onclick="myFunction()" id="myBtn">Read More</button>
+        </p>
+      </div>
+    </section>
+    <!-- Info Section End -->
+    <!-- Courses Section Start -->
+    <section id="courses" class=" my-3 py-5">
+      <div class="container">
+        <div class="row">
+          <!-- Columns 1 -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <table class="table table-bordered">
+              <thead class="fs-5 text-center">
+                <tr>
+                  <th>Youtube</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="py-3">
+                    <ol>
+                      <li><a href="/Constructionsms.html">Youtube Link</a></li>
+                    </ol>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="py-3">
+                    <ol>
+                      <li><a href="/Constructionsms.html">Youtube Link</a></li>
+                    </ol>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="py-3">
+                    <ol>
+                      <li><a href="/Constructionsms.html">Youtube Link</a></li>
+                    </ol>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="py-3">
+                    <ol>
+                      <li><a href="/Constructionsms.html">Youtube Link</a></li>
+                    </ol>
+                  </td>
+                </tr>
+              </tbody>
+              <!-- Extra List -->
+              <tbody class="courseMore" id="col1CourseMore">
+                <tr>
+                  <td class="py-3">
+                    <ol>
+                      <li><a href="/Constructionsms.html">Youtube Link</a></li>
+                    </ol>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="py-3">
+                    <ol>
+                      <li><a href="/Constructionsms.html">Youtube Link</a></li>
+                    </ol>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="courseBtnOverlay">
+              <button class="fw-bold" onclick="myCourseFunction('col1CourseMore')">Show More</button>
+            </div>
+          </div>
+          <!-- Columns 2 -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <table class="table table table-bordered">
+              <thead class="fs-5 text-center">
+                <tr>
+                  <th>Websites</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="py-3">
+                    <ol>
+                      <li><a href="/Constructionsms.html">Website</a></li>
+                    </ol>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="py-3">
+                    <ol>
+                      <li><a href="/Constructionsms.html">Website</a></li>
+                    </ol>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="py-3">
+                    <ol>
+                      <li><a href="/Constructionsms.html">Website</a></li>
+                    </ol>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="py-3">
+                    <ol>
+                      <li><a href="/Constructionsms.html">Website</a></li>
+                    </ol>
+                  </td>
+                </tr>
+              </tbody>
+              <!-- Extra List -->
+              <tbody class="courseMore" id="col2CourseMore">
+                <tr>
+                  <td class="py-3">
+                    <ol>
+                      <li><a href="/Constructionsms.html">Website</a></li>
+                    </ol>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="py-3">
+                    <ol>
+                      <li><a href="/Constructionsms.html">Website</a></li>
+                    </ol>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="courseBtnOverlay">
+              <button class="fw-bold" onclick="myCourseFunction('col2CourseMore')">Show More</button>
+            </div>
+          </div>
+          <!-- Columns 3 -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <table class="table table table-bordered">
+              <thead class="fs-5 text-center">
+                <tr>
+                  <th>Paid Courses</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="py-3">
+                    <ol>
+                      <li><a href="https://www.udemy.com">udemy premium course Link 1</a></li>
+                    </ol>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="py-3">
+                    <ol>
+                      <li><a href="https://www.udemy.com">udemy premium course Link 2</a></li>
+                    </ol>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="py-3">
+                    <ol>
+                      <li><a href="https://www.udemy.com">udemy premium course Link 3</a></li>
+                    </ol>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="py-3">
+                    <ol>
+                      <li><a href="https://www.udemy.com">udemy premium course Link 4</a></li>
+                    </ol>
+                  </td>
+                </tr>
+              </tbody>
+              <!-- Extra List -->
+              <tbody class="courseMore" id="col3CourseMore">
+                <tr>
+                  <td class="py-3">
+                    <ol>
+                      <li><a href="https://www.leadinguniversity.com">Lu Link 5</a></li>
+                    </ol>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="py-3">
+                    <ol>
+                      <li><a href="https://www.leadinguniversity.com">Lu Link 6</a></li>
+                    </ol>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="courseBtnOverlay">
+              <button class="fw-bold" onclick="myCourseFunction('col3CourseMore')">Show More</button>
+            </div>
+          </div>
+          <!-- Columns 4 -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <table class="table table table-bordered">
+              <thead class="fs-5 text-center">
+                <tr>
+                  <th class="text-uppercase">lu</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="py-3">
+                    <ol>
+                      <li><a href="https://www.leadinguniversity.com">Lu Link 1</a></li>
+                    </ol>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="py-3">
+                    <ol>
+                      <li><a href="https://www.leadinguniversity.com">Lu Link 2</a></li>
+                    </ol>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="py-3">
+                    <ol>
+                      <li><a href="https://www.leadinguniversity.com">Lu Link 3</a></li>
+                    </ol>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="py-3">
+                    <ol>
+                      <li><a href="https://www.leadinguniversity.com">Lu Link 4</a></li>
+                    </ol>
+                  </td>
+                </tr>
+              </tbody>
+              <!-- Extra List -->
+              <tbody class="courseMore" id="col4CourseMore">
+                <tr>
+                  <td class="py-3">
+                    <ol>
+                      <li><a href="https://www.leadinguniversity.com">Lu Link 5</a></li>
+                    </ol>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="py-3">
+                    <ol>
+                      <li><a href="https://www.leadinguniversity.com">Lu Link 6</a></li>
+                    </ol>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="courseBtnOverlay">
+              <button class="fw-bold" onclick="myCourseFunction('col4CourseMore')">Show More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Courses Section End -->
+
+    <!--====== Footer Area Start ======-->
+
+    <footer>
+      <div class="footer-widgets-area border">
+        <div class="container container-1360">
+          <div class="row">
+            <div class="col-lg-3 col-sm-6">
+              <div class="widget address-widget">
+                <h4 class="widget-title">Our Address</h4>
+                <p>Leading University<br> Department of CSE<br>Batch - 53rd<br>Ragibnagar, Sylhet</p>
+                <p>01720264931<br>campusdotcrew@gmail.com</p>
+              </div>
+            </div>
+            <div class="col-lg-2 col-sm-6">
+              <div class="widget nav-widget">
+                <h4 class="widget-title">Quick Links</h4>
+                <ul>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#">Careers</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Stories</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-2 col-sm-6">
+              <div class="widget nav-widget">
+                <h4 class="widget-title">Categories</h4>
+                <ul>
+                  <li><a href="#">Programers Life Style</a></li>
+                  <li><a href="#">Programing Meme</a></li>
+                  <li><a href="#">Tech News</a></li>
+                  <li><a href="#">Inspiration</a></li>
+                  <li><a href="#">Vlog</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 ml-auto">
+              <div class="widget newsletter-widget">
+                <h4 class="widget-title">Our Monthly Newsletter </h4>
+                <p>
+                  Sign Up TO Get Updates On Articles, Interviews And Events.
+                </p>
+                <form action="#">
+                  <input type="email" placeholder="your email">
+                  <button type="submit">Sign Up</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright-area border">
+        <div class="container container-1360">
+          <div class="row align-items-center">
+            <div class="col-lg-6 col-12">
+              <div class="social-links">
+                <ul>
+                  <li class="title">Follow Me</li>
+                  <li><a
+                      href="https://twitter.com/SandipC49248337?fbclid=IwAR0yuniwVnPF4__5_WZCe6DQ9QcHwlFYPEbGBd1sGPyqjOn16H9-ltYrXGs">Twitter</a>
+                  </li>
+                  <li><a href="https://www.facebook.com/SandipCb365/">Facebook</a></li>
+                  <li><a href="https://www.youtube.com/channel/UCbA4sDHR7rqGex_cTZY4QEw">Youtube</a></li>
+                  <li><a
+                      href="https://www.instagram.com/chakrabortysandip872?fbclid=IwAR1LlZ0nyqpiT_9gImEO75gtYrCJrcobRbYJ-ht66eY05vz9eFhTyo4ZHm0">Instagram</a>
+                  </li>
+                  <li><a
+                      href="https://www.linkedin.com/in/sandip-chakraborty-a874671b1/?fbclid=IwAR1zPDvokWnxID-HQQzuWAhhPbTS2RnFdhHADhPNws0-Jn3OhvHDIbICLFQ">Linkedin</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-6 col-12">
+              <div class="copyright-text text-lg-right">
+                <p class="fw-bold"><span> &copy; Copyright</span> - 2023 Campus Dot Crew | All rights reserved</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!--====== Footer Area End ======-->
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <script src="./JS/main.js"></script>
+</body>
+
+</html>
